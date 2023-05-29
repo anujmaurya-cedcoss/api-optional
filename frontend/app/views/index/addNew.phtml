@@ -1,0 +1,18 @@
+<a href = '/index/' class = 'btn btn-primary d-flex float-right m-3'>Display All</a>
+<form action="/index/add" method="post">
+    <div class="container">
+        <label for="name" class='col m-3'>
+            Robot Name : <input type='text' name='name' placeholder="Robot Name">
+        </label>
+        <label for="id" class='col m-3'>
+            Robot ID : <input type='number' class='ml-4' name='id' placeholder="Robot ID">
+        </label>
+        <label for="year" class='col m-3'>
+            Build Year : <input type='number' name='year' placeholder="Robot Year">
+        </label>
+        <label for="type" class='col m-3'>
+            Robot Type : <input type='text' name='type' placeholder="Robot type">
+        </label>
+        <input type="submit" value="Add Robot" class='m-3 btn btn-success'>
+    </div>
+</form>

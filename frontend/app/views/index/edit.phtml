@@ -1,0 +1,18 @@
+<form action="/index/update?id=<?php echo $data->id ?>" method="post">
+    <div class="container">
+        <label for="name" class='col m-3'>
+            Robot Name : <input type='text' name='name' value="<?php echo $data->name ?>">
+        </label>
+        <label for="id" class='col m-3'>
+            ID : <input type='text' class='ml-4' name='id' value="<?php echo $data->id ?>" disabled>
+        </label>
+        <label for="year" class='col m-3'>
+            Year : <input type='number' name='year' value="<?php echo $data->year ?>">
+        </label>
+
+        <label for="type" class='col m-3'>
+            Type : <input type='text' name='type' value="<?php echo $data->type ?>">
+        </label>
+        <input type="submit" value="Submit" class='m-3 btn btn-success'>
+    </div>
+</form>

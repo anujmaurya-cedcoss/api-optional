@@ -1,0 +1,16 @@
+<a href = '/index/addNew' class = 'btn btn-primary d-flex float-right m-3'>Add New</a>
+<?php
+echo "<div class = 'row container'>";
+foreach ($data as $value) {
+  echo '<div class="card m-3" style="width: 18rem;">
+    <div class="card-body">
+        <h5>Robot ID : <strong>' . $value->id . '</strong></h5>
+        <h5 class="card-title"> Name : <strong>' . $value->name . '</strong></h5>
+        <h6 class="card-subtitle mb-2 text-muted"> Year : <strong>' . $value->year . '<strong></h6>
+        <h6 class="card-subtitle mb-2 text-muted"> Type : <strong>' . $value->type . '<strong></h6>
+        <a href="/index/edit?id=' . $value->id . '" class="card-link">Edit</a>
+        <a href="/index/delete?id=' . $value->id . '" class="card-link">Delete</a>
+    </div>
+  </div>';
+}
+echo "</div>";
